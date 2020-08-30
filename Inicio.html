@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link href="Imagenes/Icono.ico" rel="shortcut icon" type="Image/x-icon" />
+  <title>Inicio</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+  .container {
+    padding: 80px 120px;
+  }
+
+  @media (max-width: 600px) {
+    .carousel-caption {
+      display: none; /* Hide the carousel text when the screen is less than 600 pixels wide */
+    }
+  }
+  .bg-1 {
+    background: rgba(0, 128, 0, 0.3);
+    color:black;
+  }
+  .bg-1 h3 {color: rgba(0, 128, 0, 0.35);}
+  .bg-1 p {font-style: italic;}
+  .modal-header, h4, .close {
+    background-color: #138d75;
+    color: #fff !important;
+    text-align: center;
+    font-size: 30px;
+  }
+  .modal-header, .modal-body {
+    padding: 40px 50px;
+  }
+  .nav-tabs li a {
+    color: #138d75;
+  }  
+  img {
+        filter: grayscale(90);
+}
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">Ajedrez </a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="Inicio.html">Inicio</a></li>  
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Modos de Juego
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="Index.html">Clasico</a></li>
+            <li><a href="Rapido.html">Rapido</a></li>
+            <li><a href="Relampago.html">Relampago</a></li> 
+          </ul>
+        </li>
+        <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Ayuda
+            <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="ManualdeUsuario.pdf">Manual de Usuario</a></li>
+              <li><a href="ManualTécnico.pdf">Manual Tecnico</a></li>
+            </ul>
+          </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container text-center">
+  <h3>Ajedrez</h3>
+  <p>El ajedrez es un juego entre dos contrincantes, cada uno dispone de 16 piezas móviles que se colocan sobre un tablero1​ dividido en 64 casillas o escaques. En su versión de competición,​ está considerado como un deporte aunque en la actualidad tiene claramente una dimensión social, educativa y terapéutica también.</p>
+  <br>
+</div>
+
+<!-- Container (TOUR Section) -->
+<div class="bg-1">
+  <div class="container ">
+    <h3 class="text-center">Movimientos</h3>
+    <p class="text">          ♛ <b>El Rey</b> se puede mover en cualquier dirección (vertical, horizontal y diagonales) avanzando o retrocediendo una sola casilla (excepto en el enroque, en el cual se mueve 2 casillas —enroque corto— o 3 casillas —enroque largo—). <br> <hr color="white" size=1>
+                              ♚ <b>La Reina</b> o Dama también se puede mover en cualquier dirección (vertical, horizontal y diagonales) avanzando o retrocediendo en el tablero el número de casillas que se desee, hasta topar con otra pieza o el borde del tablero.<br> <hr color="white" size=1>
+                              ♝ <b>El Alfil</b> solo se puede mover en dirección diagonal, tantas casillas como se desee, pero siempre en diagonal y en el color que le pertenece.<br> <hr color="white" size=1>
+                              ♜ <b>La Torre</b> solo se puede mover en las direcciones verticales y horizontales, no en diagonal, las casillas que se desee.<br> <hr color="white" size=1>
+                              ♞ <b>El Caballo</b>, según la definición oficial, se puede mover a la casilla más cercana que no se encuentre en su propia fila, columna o diagonal, aunque para simplificar se dice que se mueve avanzando 2 casillas en vertical y una en horizontal, o viceversa, realizando un movimiento de ‘L’, siendo la única pieza que puede saltar por encima de las demás piezas.<br> <hr color="white" size=1>
+                              ♟ <b>El Peón</b> puede avanzar una o dos casillas en dirección vertical en su primer movimiento, después de adelantado por primera vez solo puede avanzar una casilla, a diferencia del resto de piezas no puede ir hacia atrás y no puede capturar las piezas contrarias que se encuentran en la misma dirección en la que se mueve, solo podrá hacerlo si se encuentran a una casilla en diagonal respecto a él (excepto en la toma de peón al paso). Un peón tiene la capacidad de transformarse en la pieza que su jugador desee (normalmente en dama) si es capaz de alcanzar la última fila del tablero opuesta a la de su bando, por lo que un peón puede adquirir un enorme poder táctico en determinadas posiciones donde no tiene oposición para "coronar" (peón pasado).</p> <hr color="white" size=1>
+    <img src="Imagenes/chess.png" width="950" height="475" >
+  </div>
+</body>
+</html>

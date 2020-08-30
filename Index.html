@@ -1,0 +1,96 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta id="PageDescription" name="Description" content="Chees" />
+    <meta name="Keywords" content="Ajedrez, Chess, JavaScript" />
+    <link href="Imagenes/Icono.ico" rel="shortcut icon" type="Image/x-icon" />
+
+    <title>Ajedrez JS</title>
+    
+    <link rel="stylesheet" type="text/css" href="Estilo.css" />   
+    <script src="JavaScript/IniciaJuego.js" type="text/javascript"></script>
+    <script src="JavaScript/CalcularMovimientos.js" type="text/javascript"></script>
+    <script src="JavaScript/Movimientos.js" type="text/javascript"></script>
+</head>
+<style>
+body {
+    background: rgba(0, 128, 0, 0.3);
+  }
+  h1 {
+    background: rgba(0, 128, 0, 0.31);
+  }
+  </style>
+<body onload = "IniciaJuego();">
+    <h1 align="center">Ajedrez: Modo Clasico</h1>
+<div id="fondo"></div>
+<div id="escogerBlanco" class="escoger">
+    <div class="Reina-Blanco" onclick="escoger('Reina','Blanco');"></div>
+    <div class="Torre-Blanco" onclick="escoger('Torre','Blanco');"></div>
+    <div class="Caballo-Blanco" onclick="escoger('Caballo','Blanco');"></div>
+    <div class="Alfil-Blanco" onclick="escoger('Alfil','Blanco');"></div>
+</div>
+<div id="escogerNegro" class="escoger">
+    <div class="Reina-Negro" onclick="escoger('Reina','Negro');"></div>
+    <div class="Torre-Negro" onclick="escoger('Torre','Negro');"></div>
+    <div class="Caballo-Negro" onclick="escoger('Caballo','Negro');"></div>
+    <div class="Alfil-Negro" onclick="escoger('Alfil','Negro');"></div>
+</div>
+
+<div id="tablero">
+
+    <div id="t11" onclick="selecciona(1,1);"></div>     <div id="t12" onclick="selecciona(1,2);"></div>
+    <div id="t13" onclick="selecciona(1,3);"></div>     <div id="t14" onclick="selecciona(1,4);"></div>
+    <div id="t15" onclick="selecciona(1,5);"></div>     <div id="t16" onclick="selecciona(1,6);"></div>
+    <div id="t17" onclick="selecciona(1,7);"></div>     <div id="t18" onclick="selecciona(1,8);"></div>
+
+    <div id="t21" onclick="selecciona(2,1);"></div>     <div id="t22" onclick="selecciona(2,2);"></div>
+    <div id="t23" onclick="selecciona(2,3);"></div>     <div id="t24" onclick="selecciona(2,4);"></div>
+    <div id="t25" onclick="selecciona(2,5);"></div>     <div id="t26" onclick="selecciona(2,6);"></div>
+    <div id="t27" onclick="selecciona(2,7);"></div>     <div id="t28" onclick="selecciona(2,8);"></div>
+
+    <div id="t31" onclick="selecciona(3,1);"></div>     <div id="t32" onclick="selecciona(3,2);"></div>
+    <div id="t33" onclick="selecciona(3,3);"></div>     <div id="t34" onclick="selecciona(3,4);"></div>
+    <div id="t35" onclick="selecciona(3,5);"></div>     <div id="t36" onclick="selecciona(3,6);"></div>
+    <div id="t37" onclick="selecciona(3,7);"></div>     <div id="t38" onclick="selecciona(3,8);"></div>
+
+    <div id="t41" onclick="selecciona(4,1);"></div>     <div id="t42" onclick="selecciona(4,2);"></div>
+    <div id="t43" onclick="selecciona(4,3);"></div>     <div id="t44" onclick="selecciona(4,4);"></div>
+    <div id="t45" onclick="selecciona(4,5);"></div>     <div id="t46" onclick="selecciona(4,6);"></div>
+    <div id="t47" onclick="selecciona(4,7);"></div>     <div id="t48" onclick="selecciona(4,8);"></div>
+
+    <div id="t51" onclick="selecciona(5,1);"></div>     <div id="t52" onclick="selecciona(5,2);"></div>
+    <div id="t53" onclick="selecciona(5,3);"></div>     <div id="t54" onclick="selecciona(5,4);"></div>
+    <div id="t55" onclick="selecciona(5,5);"></div>     <div id="t56" onclick="selecciona(5,6);"></div>
+    <div id="t57" onclick="selecciona(5,7);"></div>     <div id="t58" onclick="selecciona(5,8);"></div>
+
+    <div id="t61" onclick="selecciona(6,1);"></div>     <div id="t62" onclick="selecciona(6,2);"></div>
+    <div id="t63" onclick="selecciona(6,3);"></div>     <div id="t64" onclick="selecciona(6,4);"></div>
+    <div id="t65" onclick="selecciona(6,5);"></div>     <div id="t66" onclick="selecciona(6,6);"></div>
+    <div id="t67" onclick="selecciona(6,7);"></div>     <div id="t68" onclick="selecciona(6,8);"></div>
+
+    <div id="t71" onclick="selecciona(7,1);"></div>     <div id="t72" onclick="selecciona(7,2);"></div>
+    <div id="t73" onclick="selecciona(7,3);"></div>     <div id="t74" onclick="selecciona(7,4);"></div>
+    <div id="t75" onclick="selecciona(7,5);"></div>     <div id="t76" onclick="selecciona(7,6);"></div>
+    <div id="t77" onclick="selecciona(7,7);"></div>     <div id="t78" onclick="selecciona(7,8);"></div>
+
+    <div id="t81" onclick="selecciona(8,1);"></div>     <div id="t82" onclick="selecciona(8,2);"></div>
+    <div id="t83" onclick="selecciona(8,3);"></div>     <div id="t84" onclick="selecciona(8,4);"></div>
+    <div id="t85" onclick="selecciona(8,5);"></div>     <div id="t86" onclick="selecciona(8,6);"></div>
+    <div id="t87" onclick="selecciona(8,7);"></div>     <div id="t88" onclick="selecciona(8,8);"></div>
+    
+</div>
+<br>
+<div style="text-align:center;">
+<a href="" class="boton_1" onclick="window.location.reload();" >Reset </a>
+</div>
+<br>
+<div style="text-align:center;">
+    <a href="Inicio.html" class="boton_2" onclick="" >Regresar al Inicio </a>
+    </div>
+<br><br><br><br><br>
+
+<div id="footer">
+</div>
+</body>
+</html>

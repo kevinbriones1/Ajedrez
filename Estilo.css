@@ -1,0 +1,81 @@
+@charset "utf-8";
+/* CSS */
+
+.borde{border:#F00;}
+.tabNegro{background:#03C;}
+
+/* Tablero */
+#tablero{width:400px; height:400px; border:#000 solid 1px; margin:auto;}
+#tablero div{width:48px; height:48px; float:left; margin:1px;}
+
+#t11, #t13, #t15, #t17, #t22, #t24, #t26, #t28, #t31, #t33, #t35, #t37, #t42, #t44, #t46, #t48, #t51, #t53, #t55, #t57, #t62, #t64, #t66, #t68, #t71, #t73, #t75, #t77, #t82, #t84, #t86, #t88{background-color:#a2d9ce;}
+#t12, #t14, #t16, #t18, #t21, #t23, #t25, #t27, #t32, #t34, #t36, #t38, #t41, #t43, #t45, #t47, #t52, #t54, #t56, #t58, #t61, #t63, #t65, #t67, #t72, #t74, #t76, #t78, #t81, #t83, #t85, #t87{background-color:#138d75;}
+
+.Alfil-Negro, .Caballo-Negro, .Peon-Negro, .Reina-Negra, .Rey-Negro, .Torre-Negra, .Alfil-Blanco, .Caballo-Blanco, .Peon-Blanco, .Reina-Blanca, .Rey-Blanco, .Torre-Blanca { cursor: pointer;}
+/* Piezas Negras */
+.Peon-Negro{background:url(Imagenes/Piezas.png) 50px 0;}
+.Alfil-Negro{background:url(Imagenes/Piezas.png) 100px 0;}
+.Caballo-Negro{background:url(Imagenes/Piezas.png) 150px 0;}
+.Torre-Negro{background:url(Imagenes/Piezas.png) 200px 0;}
+.Reina-Negro{background:url(Imagenes/Piezas.png) 250px 0;}
+.Rey-Negro{background:url(Imagenes/Piezas.png) 300px 0;}
+/*Piezas Blancas */
+.Peon-Blanco{background:url(Imagenes/Piezas.png) 50px 50px;}
+.Alfil-Blanco{background:url(Imagenes/Piezas.png) 100px 50px;}
+.Caballo-Blanco{background:url(Imagenes/Piezas.png) 150px 50px;}
+.Torre-Blanco{background:url(Imagenes/Piezas.png) 200px 50px;}
+.Reina-Blanco{background:url(Imagenes/Piezas.png) 250px 50px;}
+.Rey-Blanco{background:url(Imagenes/Piezas.png) 300px 50px;}
+
+#fondo{background: #0b5345    ; position:fixed; width:100%; height:100%; z-index:999; top:0; left:0; display:none;opacity:0.50;-moz-opacity: 0.50;filter: alpha(opacity=50);}
+.escoger{position:fixed;top:20%;left:40%;display:none;z-index:1000;background:#FFF;border:#000 solid 1px;}
+.escoger div{width:50px; height:50px; float:left; margin:5px;}
+
+  .boton_1{
+    text-decoration: none;
+    padding: 3px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-family: helvetica;
+    font-weight: 300;
+    font-size: 25px;
+    font-style: italic;
+    color: #006505;
+    background-color: #82b085;
+    border-radius: 15px;
+    border: 3px double #006505;
+    position:relative;
+  }
+  .boton_1:hover{
+    opacity: 0.6;
+    text-decoration: none;
+  }
+  .boton_2{
+    text-decoration: none;
+    padding: 3px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-family: helvetica;
+    font-weight: 300;
+    font-size: 25px;
+    font-style: italic;
+    color: #006505;
+    background-color: #82b085;
+    border-radius: 15px;
+    border: 3px double #006505;
+    position:relative;
+  }
+  .boton_2:hover{
+    opacity: 0.6;
+    text-decoration: none;
+  }
+  #footer{
+    float: left;
+    width: 1510px;
+    min-height: 30px;
+    background: rgba(0, 128, 0, 0.31);
+    color: #ffffff;
+    text-align: center;
+    padding: 5px;
+    font-weight: bold;
+}
